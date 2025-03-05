@@ -1,148 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepak Ramsubhag</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            background: #444;
-            padding: 0.5rem 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            width: 80%;
-            margin: 2rem auto;
-        }
-
-        h2 {
-            border-bottom: 2px solid #444;
-            padding-bottom: 0.5rem;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 0.5rem 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deepak Ramsubhag - Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6CX/8KEC6x1J/4tF3/7NEsdbQJv+fFgH7Bo2YXy1jq7ltXjKfTxD6v+nK1LlhvfV8GpWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f4f4f9, #e2e2f0);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    /* Navbar customization */
+    .navbar {
+      background: rgba(51, 51, 51, 0.9);
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover {
+      color: #ffdd57 !important;
+    }
+    /* Hero section */
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?coast,sea') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    /* Section headings */
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #444;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Deepak Ramsubhag</h1>
-        <p>Welcome to my portfolio!</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! my name is Deepak, a passionate researcher, developer and data scientist specializing in Machine Learning, Computer Vision and applications of Artifical Intelligence. 
-               This portfolio showcases my work and achievements.</p>
-        </section>
-
-        <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-        <li>
-            <strong>D. Ramsubhag and P. Hosein</strong>, 
-            “On the Determination of a Suitable Distance Metric for the Kappa Regression Algorithm,” 
-            presented at <em>IEEE ICTMOD 2024</em>, United Arab Emirates, Nov. 2024, and published in the conference proceedings. 
-            <a href="http://dx.doi.org/10.1109/ICTMOD63116.2024.10878182" target="_blank">DOI: 10.1109/ICTMOD63116.2024.10878182</a>
-        </li>
-        <li>
-            <strong>D. Ramsubhag and P. Hosein</strong>, 
-            “Kappa Encoding Using the Huber Loss Function,” 
-            presented at <em>IEEE ICTMOD 2024</em>, United Arab Emirates, Nov. 2024, and published in the conference proceedings. 
-            <a href="http://dx.doi.org/10.1109/ICTMOD63116.2024.10878158" target="_blank">DOI: 10.1109/ICTMOD63116.2024.10878158</a>
-        </li>
-        <li>
-            <strong>S. Small, D. Ramsubhag, K. Baboolal, and P. Hosein</strong>, 
-            “Recommender Systems Using the Kappa Algorithm,” 
-            presented at <em>IEEE ICTMOD 2024</em>, United Arab Emirates, Nov. 2024, and published in the conference proceedings. 
-            <a href="http://dx.doi.org/10.1109/ICTMOD63116.2024.10878257" target="_blank">DOI: 10.1109/ICTMOD63116.2024.10878257</a>
-        </li>
-        <li>
-            <strong>D. Ramsubhag and P. Hosein</strong>, 
-            “Efficient Hyper-Parameter Tuning for the Kappa Regression Algorithm,” 
-            presented at <em>DASA 24</em>, Kingdom of Bahrain, Dec. 2024, and published in the conference proceedings. 
-            <a href="http://dx.doi.org/10.1109/DASA63652.2024.10836378" target="_blank">DOI: 10.1109/DASA63652.2024.10836378</a>
-        </li>
-        <li>
-            <strong>V. Rajamanickam, D. Ramsubhag, J. Jayaraman, and A. Ramsubhag</strong>, 
-            “AI Insights for Pepper Disease Detection and Assessment,” 
-            accepted for publication at <em>Inaugural Interdisciplinary International Research Conference</em>, Guyana, June 2025.
-        </li>
-        <li>
-            <strong>T. Ramkissoon, L. Addison, A. Seedath, D. Ramsubhag, A. Ali, and P. Hosein</strong>, 
-            “A Policy Framework for AI-Centric Climate Resilience Action Plans,” 
-            accepted for publication in <em>Achieving Climate Action and the Sustainable Development Goals (SDGs)</em>, CRC Press, 2025.
-        </li>
-    </ul>
-</section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me:</p>
-        <ul>
-            <li>Email: <a href="mailto:deepak.ramsubhag@gmail.com">deepak.ramsubhag@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/deepak-ramsubhag-18196a320/" target="_blank">linkedin.com/in/deepak-ramsubhag-18196a320</a></li>
-            <li>GitHub: <a href="https://github.com/Deepak-Ramsubhag" target="_blank">github.com/Deepak-Ramsubhag</a></li>
-            <li>ResearchGate: <a href="https://www.researchgate.net/profile/Deepak-Ramsubhag" target="_blank">researchgate.net/profile/Deepak-Ramsubhag</a></li>
-            <li>Google Scholar: <a href="https://scholar.google.com/citations?user=_vob2ZMAAAAJ&hl=en&authuser=1" target="_blank">scholar.google.com/citations?user=_vob2ZMAAAAJ</a></li>
+      <a class="navbar-brand" href="#">Deepak Ramsubhag</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="1500">
+      <h1 class="display-3 fw-bold">Deepak Ramsubhag</h1>
+      <p class="lead">Researcher, Developer & Data Scientist</p>
+      <a href="#about" class="btn btn-lg btn-warning mt-3">Learn More</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- About Section -->
+    <section id="about" class="my-5" data-aos="fade-right">
+      <div class="text-center">
+        <h2>About Me</h2>
+      </div>
+      <p class="mt-4">
+        Hello! My name is Deepak, a passionate researcher, developer, and data scientist specializing in Machine Learning, Computer Vision, and Artificial Intelligence. This portfolio showcases my work and achievements across a range of cutting-edge projects.
+      </p>
     </section>
 
-    </div>
 
-    <footer>
-        <p>&copy; 2024 Deepak Ramsubhag. All Rights Reserved.</p>
-    </footer>
+    <!-- Experience Section -->
+    <section id="experience" class="my-5" data-aos="fade-up">
+      <div class="text-center">
+        <h2>Experience</h2>
+      </div>
+      <div class="mt-4">
+        <div class="mb-4">
+          <h4>Researcher</h4>
+          <p>
+            <strong>TTLab</strong><br>
+            10/2023 - Present
+          </p>
+        </div>
+        <div class="mb-4">
+          <h4>Tutor</h4>
+          <p>
+            <strong>University of the West Indies, St. Augustine</strong><br>
+            09/2023 - Present
+          </p>
+          <ul>
+            <li>Department of Computer Science &amp; Information Technology</li>
+            <li>Office of the Dean, Faculty of Science &amp; Technology</li>
+          </ul>
+        </div>
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="my-5" data-aos="fade-up">
+      <div class="text-center">
+        <h2>Education</h2>
+      </div>
+      <div class="mt-4">
+        <h4>Bachelor of Science, Majors: Computer Science, Mathematics</h4>
+        <p>
+          <strong>The University of The West Indies, St. Augustine Campus</strong><br>
+          2019 - 2023<br>
+          GPA: 4.00
+        </p>
+        <h5>Awards:</h5>
+        <ul>
+          <li>The Atlantic Co. of Trinidad & Tobago Prize - Most outstanding overall graduand in Computer Science or Information Technology (2022-2023)</li>
+          <li>The ZS Prize - Graduate with the highest GPA in Computer Science (2022-2023)</li>
+          <li>The Fujitsu Caribbean (Trinidad) Ltd. Prize - Best Year III performance in Computer Science (2022-2023)</li>
+          <li>Deans Honor Roll 2020-2021</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="my-5" data-aos="fade-left">
+      <div class="text-center">
+        <h2>Publications</h2>
+      </div>
+      <ul class="list-group list-group-flush mt-4">
+        <li class="list-group-item">
+          <strong>D. Ramsubhag and P. Hosein</strong>,
+          “On the Determination of a Suitable Distance Metric for the Kappa Regression Algorithm,”
+          presented at <em>IEEE ICTMOD 2024</em>, United Arab Emirates, Nov. 2024. 
+          <a href="http://dx.doi.org/10.1109/ICTMOD63116.2024.10878182" target="_blank">DOI: 10.1109/ICTMOD63116.2024.10878182</a>
+        </li>
+        <li class="list-group-item">
+          <strong>D. Ramsubhag and P. Hosein</strong>,
+          “Kappa Encoding Using the Huber Loss Function,”
+          presented at <em>IEEE ICTMOD 2024</em>, United Arab Emirates, Nov. 2024. 
+          <a href="http://dx.doi.org/10.1109/ICTMOD63116.2024.10878158" target="_blank">DOI: 10.1109/ICTMOD63116.2024.10878158</a>
+        </li>
+        <li class="list-group-item">
+          <strong>S. Small, D. Ramsubhag, K. Baboolal, and P. Hosein</strong>,
+          “Recommender Systems Using the Kappa Algorithm,”
+          presented at <em>IEEE ICTMOD 2024</em>, United Arab Emirates, Nov. 2024. 
+          <a href="http://dx.doi.org/10.1109/ICTMOD63116.2024.10878257" target="_blank">DOI: 10.1109/ICTMOD63116.2024.10878257</a>
+        </li>
+        <li class="list-group-item">
+          <strong>D. Ramsubhag and P. Hosein</strong>,
+          “Efficient Hyper-Parameter Tuning for the Kappa Regression Algorithm,”
+          presented at <em>DASA 24</em>, Kingdom of Bahrain, Dec. 2024. 
+          <a href="http://dx.doi.org/10.1109/DASA63652.2024.10836378" target="_blank">DOI: 10.1109/DASA63652.2024.10836378</a>
+        </li>
+        <li class="list-group-item">
+          <strong>V. Rajamanickam, D. Ramsubhag, J. Jayaraman, and A. Ramsubhag</strong>,
+          “AI Insights for Pepper Disease Detection and Assessment,” accepted for publication at <em>Inaugural Interdisciplinary International Research Conference</em>, Guyana, June 2025.
+        </li>
+        <li class="list-group-item">
+          <strong>T. Ramkissoon, L. Addison, A. Seedath, D. Ramsubhag, A. Ali, and P. Hosein</strong>,
+          “A Policy Framework for AI-Centric Climate Resilience Action Plans,” accepted for publication in <em>Achieving Climate Action and the Sustainable Development Goals (SDGs)</em>, CRC Press, 2025.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="my-5" data-aos="fade-up">
+      <div class="text-center">
+        <h2>Projects</h2>
+      </div>
+      <!-- Kappa Algorithm -->
+      <div class="mt-4">
+        <h3>Kappa Algorithm</h3>
+        <p>
+          The Kappa Algorithm is a novel neighbor-based machine learning approach. I have enhanced its performance by optimizing distance metrics and loss functions to align with the algorithm’s complexity and the statistical properties of data. My innovative parameter tuning techniques have improved its efficiency, resulting in three first-author IEEE conference papers on regression tasks and identifying key areas for further development. I continue to expand its application to classification, anomaly detection, advanced optimization methods, and deeper theoretical analyses.
+        </p>
+      </div>
+      <!-- Segmentation and Classification of Planktonic Images -->
+      <div class="mt-4">
+        <h3>Segmentation and Classification of Planktonic Images</h3>
+        <p>
+          This project leverages deep learning to automate the segmentation and classification of plankton in microscopic underwater images from the Caribbean. As a data scientist on this team, I focus on designing and refining advanced image segmentation techniques to enhance both accuracy and reliability.
+        </p>
+      </div>
+      <!-- Morphological Analysis and Classification of Mosquitoes -->
+      <div class="mt-4">
+        <h3>Morphological Analysis and Classification of Mosquitoes</h3>
+        <p>
+          As a machine learning engineer, I am dedicated to the morphological analysis and classification of mosquito species native to Trinidad and Tobago. By employing deep learning frameworks, I work to automate species identification and population assessments, thereby reducing reliance on time-consuming and costly genetic testing methods.
+        </p>
+      </div>
+      <!-- AI for Foliar Disease Detection -->
+      <div class="mt-4">
+        <h3>AI for Foliar Disease Detection</h3>
+        <p>
+          I am developing AI solutions to detect, classify, and predict the severity of foliar diseases in Caribbean plants. My contributions include optimizing the project framework, building a web application to support real-time disease monitoring and decision-making, developing new and efficient feature extraction methods, and applying traditional machine learning models to achieve highly accurate classification results, with journal articles currently under review.
+        </p>
+      </div>
+      <!-- AI4COASTS (AI in Coastal Resilience) -->
+      <div class="mt-4">
+        <h3>AI4COASTS (AI in Coastal Resilience)</h3>
+        <p>
+          As the lead data scientist and machine learning engineer on a funded coastal resilience initiative, I drive efforts to harness AI for identifying regions at risk, formulating actionable improvement strategies, and synthesizing insights from diverse data sources.
+        </p>
+      </div>
+      <!-- AI in Climate Change -->
+      <div class="mt-4">
+        <h3>AI in Climate Change: Digital Twins, LLMs</h3>
+        <p>
+          In this large-scale project, I employ AI technologies to address climate change challenges. My work involves integrating Digital Twins and Large Language Models (LLMs) to enhance flood resilience, support mitigation efforts, and inform policymaking in Small Island Developing States (SIDS).
+        </p>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="my-5" data-aos="fade-up">
+      <div class="text-center">
+        <h2>Certificates</h2>
+      </div>
+      <div class="mt-4">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>Machine Learning</strong> - Stanford University
+          </li>
+          <li class="list-group-item">
+            <strong>Machine Learning Specialization</strong> – Stanford University, DeepLearning.AI
+            <ul class="list-unstyled ms-4 mt-2">
+              <li>Supervised Machine Learning: Regression and Classification</li>
+              <li>Advanced Learning Algorithms</li>
+              <li>Unsupervised Learning, Recommenders, Reinforcement Learning</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="my-5" data-aos="fade-up">
+      <div class="text-center">
+        <h2>Contact</h2>
+      </div>
+      <div class="mt-4">
+        <p>Feel free to reach out to me via the following channels:</p>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-envelope"></i> Email: <a href="mailto:deepak.ramsubhag@gmail.com">deepak.ramsubhag@gmail.com</a></li>
+          <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/deepak-ramsubhag-18196a320/" target="_blank">linkedin.com/in/deepak-ramsubhag-18196a320</a></li>
+          <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Deepak-Ramsubhag" target="_blank">github.com/Deepak-Ramsubhag</a></li>
+          <li><i class="fab fa-researchgate"></i> ResearchGate: <a href="https://www.researchgate.net/profile/Deepak-Ramsubhag" target="_blank">researchgate.net/profile/Deepak-Ramsubhag</a></li>
+          <li><i class="fas fa-graduation-cap"></i> Google Scholar: <a href="https://scholar.google.com/citations?user=_vob2ZMAAAAJ&hl=en&authuser=1" target="_blank">scholar.google.com/citations?user=_vob2ZMAAAAJ</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Deepak Ramsubhag. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
 </body>
 </html>
